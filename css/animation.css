@@ -12,13 +12,13 @@
 
 #all {
 	text-align: right;
-	transform: scale(4.7,1.2);
+	transform: scale(1.2,.6);
 	margin: auto;
 	background-color: #00B3AB;
 }
 
 button {
-	background-color: Transparent;
+	background-color: transparent;
 	background-repeat: no-repeat;
 	border: none;
 	cursor: pointer;
@@ -67,7 +67,7 @@ button:hover:before, button:active:after {
 
 #all:hover {
 	background-color: #007A67;
-	transform: scale3d(2,4,.9);
+	transform: scale3d(1.7,2.7,2);
 	transition-delay: 4s;
 	border-style: solid dotted dashed double;
 }
