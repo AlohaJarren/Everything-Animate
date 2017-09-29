@@ -1,11 +1,13 @@
 #rotate {
 	transform: rotate(130deg);
 	margin-left: 5%;
+	background-color: #009B83;
 }
 
 #skew {
 	transform: skew(36deg, 38deg);
 	margin-left: 5%;
+	background-color: #009B83;
 }
 
 #all {
@@ -72,7 +74,8 @@ button:hover:before, button:active:after {
 
 #matrix {
 	transform: matrix(1, -0.9, .9, .2, 230, 29);
-	font-size: 24px;;
+	font-size: 24px;
+	background-color: #009B83;
 }
 
 #matrix:focus {
@@ -98,77 +101,88 @@ button:hover:before, button:active:after {
 
 #animate {
 	animation-name: funBegins;
-	animation-duration: 1.5s;
+	animation-duration: 0.9s;
 	animation-iteration-count: infinite;
 }
 
 @keyframes funBegins{
 	0% {
-		font-family: Georgia, serif;
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 		font-size: 9px;
-		background-color: DarkTurquoise;
-		color: Yellow;
+		background-color: MistyRose;
+		color: Indigo;
+		transform: rotate(0deg);
 	}
 	10% {
 		font-family: "Courier New", Courier, monospace;
 		font-size: 41px;
 		background-color: Salmon;
 		color: Peru;
+		transform: rotate(36deg);
 	}
 	20% {
 		font-family: Verdana, Geneva, sans-serif;
 		font-size: 19px;
 		background-color: DarkGoldenrod;
 		color: Crimson;
+		transform: rotate(72deg);
 	}
 	30% {
 		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 		font-size: 12px;
 		background-color: DarkSlateBlue;
 		color: DeepPink;
+		transform: rotate(108deg);
 	}
 	40% {
 		font-family: "Arial Black", Gadget, sans-serif;
 		font-size: 36px;
 		background-color: Lime;
 		color: Sienna;
+		transform: rotate(144deg);
 	}
 	50% {
-		font-family: "Comic Sans MS", cursive, sans-serif;
-		font-size: 200px;
-		background-color: Olive;
-		color: Fuchsia;
-		display: inline-flex;
+		font-family: Georgia, serif;
+		font-size: 9px;
+		background-color: DarkTurquoise;
+		color: Yellow;
+		transform: rotate(180deg);
 	}
 	60% {
 		font-family: "Times New Roman", Times, serif;
 		font-size: 27px;
 		background-color: DarkBlue;
 		color: Gold;
+		transform: rotate(216deg);
 	}
 	70% {
 		font-family: Impact, Charcoal, sans-serif;
 		font-size: 32px;
 		background-color: Black;
 		color: White;
+		transform: rotate(252deg);
 	}
 	80% {
 		font-family: "Lucida Console", Monaco, monospace;
 		font-size: 14px;
 		background-color: Tomato;
 		color: DarkGreen;
+		transform: rotate(288deg);
 	}
 	90% {
-		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-		font-size: 9px;
-		background-color: MistyRose;
-		color: Indigo;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		font-size: 200px;
+		background-color: Olive;
+		color: Fuchsia;
+		display: inline-flex;
+		transform: rotate(326deg);
 	}
 	100% {
 		font-family: "Trebuchet MS", Helvetica, sans-serif;
 		font-size: 38px;
 		background-color: MediumSpringGreen;
 		color: DarkRed;
+		transform: rotate(360deg);
 	}
 }
 
