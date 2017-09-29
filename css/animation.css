@@ -1,3 +1,180 @@
-#rotate:hover {
-  transform: rotate(130deg);
+#rotate {
+	transform: rotate(130deg);
+	margin-left: 5%;
+}
+
+#skew {
+	transform: skew(36deg, 38deg);
+	margin-left: 5%;
+}
+
+#all {
+	text-align: right;
+	transform: scale(4.7,1.2);
+	margin: auto;
+	background-color: #00B3AB;
+}
+
+button {
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+}
+
+button span {
+	transition: 0.4s;
+	transition-delay: 0.2s;
+}
+
+button:before, button:after {
+	position: absolute;
+	top: 0.67em;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	transition: .4s;
+	opacity: .6s;
+}
+
+button:before {
+	content: attr(data-hover);
+	transform: translate(-150%,0);
+}
+
+button:after {
+	content: attr(data-active);
+	transform: translate(150%,0);
+}
+
+button:hover span, button:active span {
+	opacity: 0;
+	transform: scale(0.3);
+}
+
+button:hover:before, button:active:after {
+	opacity: 1;
+	transform: translate(0,0);
+	transition-delay: .4s
+}
+
+/* Reference for Button: https://codepen.io/Jintos/pen/rolim*/
+
+#all:hover {
+	background-color: #007A67;
+	transform: scale3d(2,4,.9);
+	transition-delay: 4s;
+	border-style: solid dotted dashed double;
+}
+
+#matrix {
+	transform: matrix(1, -0.9, .9, .2, 230, 29);
+	font-size: 24px;;
+}
+
+#matrix:focus {
+	background-color: hotpink;
+	text-align: middle;
+}
+
+#theInput {
+	width: 130px;
+	box-sizing: border-box;
+	border: 2px solid black;
+	border-radius: 4px;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	transition: width 2s ease-in-out;
+}
+
+#theInput:focus {
+	width: 100%;
+	background-color: hotpink;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#animate {
+	animation-name: funBegins;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes funBegins{
+	0% {
+		font-family: Georgia, serif;
+		font-size: 9px;
+		background-color: DarkTurquoise;
+		color: Yellow;
+	}
+	10% {
+		font-family: "Courier New", Courier, monospace;
+		font-size: 41px;
+		background-color: Salmon;
+		color: Peru;
+	}
+	20% {
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 19px;
+		background-color: DarkGoldenrod;
+		color: Crimson;
+	}
+	30% {
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		font-size: 12px;
+		background-color: DarkSlateBlue;
+		color: DeepPink;
+	}
+	40% {
+		font-family: "Arial Black", Gadget, sans-serif;
+		font-size: 36px;
+		background-color: Lime;
+		color: Sienna;
+	}
+	50% {
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		font-size: 200px;
+		background-color: Olive;
+		color: Fuchsia;
+		display: inline-flex;
+	}
+	60% {
+		font-family: "Times New Roman", Times, serif;
+		font-size: 27px;
+		background-color: DarkBlue;
+		color: Gold;
+	}
+	70% {
+		font-family: Impact, Charcoal, sans-serif;
+		font-size: 32px;
+		background-color: Black;
+		color: White;
+	}
+	80% {
+		font-family: "Lucida Console", Monaco, monospace;
+		font-size: 14px;
+		background-color: Tomato;
+		color: DarkGreen;
+	}
+	90% {
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+		font-size: 9px;
+		background-color: MistyRose;
+		color: Indigo;
+	}
+	100% {
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		font-size: 38px;
+		background-color: MediumSpringGreen;
+		color: DarkRed;
+	}
+}
+
+#pseudo:hover {
+	transform: scale(2,3);
+	transform: rotate3d(0.5,-2,1,960deg);
+	transition: ease;
+	transition-duration: 3s;
 }
